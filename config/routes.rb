@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'pages/aboutus'
+
+  get 'pages/timetravel'
+
+  get 'pages/destination'
+
   devise_for :users
   get 'welcome/index'
 
