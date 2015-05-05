@@ -5,7 +5,13 @@
 <head>
   <title>GraphicsFinal</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+      <script src="/assets/jquery.min.js"></script>
+    <script src="/assets/jquery.dropotron.min.js"></script>
+    <script src="/assets/skel.min.js"></script>
+    <script src="/assets/skel-layers.min.js"></script>
+    <script src="/assets/init.js"></script>
 </head>
 
 <% if notice %>
@@ -214,7 +220,5 @@
 					</ul>
 				</div>
 			</div>
-
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
