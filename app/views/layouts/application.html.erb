@@ -5,7 +5,6 @@
 <head>
   <title>GraphicsFinal</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 
@@ -84,7 +83,7 @@
 					<div class="row 150%">
 						<div class="4u">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="/images/pic02.jpg" alt="" /></a>
 								<h3><a href="#">The Apollo Moon Landing</a></h3>
 								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 								<ul class="actions">
@@ -94,7 +93,7 @@
 						</div>
 						<div class="4u">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="/images/pic03.jpg" alt="" /></a>
 								<h3><a href="#">Boston Tea Party</a></h3>
 								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 								<ul class="actions">
@@ -104,7 +103,7 @@
 						</div>
 						<div class="4u">
 							<section class="highlight">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="/images/pic04.jpg" alt="" /></a>
 								<h3><a href="#">Prohibition</a></h3>
 								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
 								<ul class="actions">
@@ -216,5 +215,6 @@
 				</div>
 			</div>
 
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
