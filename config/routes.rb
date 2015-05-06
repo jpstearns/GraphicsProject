@@ -1,9 +1,21 @@
 Rails.application.routes.draw do
+  get 'pages/itinerary'
+
+  get 'pages/documents'
+
+  get 'pages/requests'
+
+  get 'pages/disclaimer'
+
+  get 'pages/about'
+
   get 'pages/aboutus'
 
   get 'pages/timetravel'
 
   get 'pages/destination'
+
+  get 'pages/jfk'
 
   devise_for :users
   get 'welcome/index'

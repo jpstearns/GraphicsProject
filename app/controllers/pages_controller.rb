@@ -1,10 +1,19 @@
 class PagesController < ApplicationController
-  def aboutus
+  def itinerary
   end
 
-  def timetravel
+  def documents
   end
 
-  def destination
+  def requests
+  end
+
+  def disclaimer
+  end
+
+  def about
+  end
+
+  def jfk
   end
 end
