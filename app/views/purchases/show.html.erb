@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @purchase.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @purchase.lname %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @purchase.dob %>
+</p>
+
+<p>
+  <strong>Ssn:</strong>
+  <%= @purchase.ssn %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @purchase.address %>
+</p>
+
+<p>
+  <strong>Line2:</strong>
+  <%= @purchase.line2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @purchase.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @purchase.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @purchase.zip %>
+</p>
+
+<p>
+  <strong>Creditcard:</strong>
+  <%= @purchase.creditcard %>
+</p>
+
+<p>
+  <strong>Cardtype:</strong>
+  <%= @purchase.cardtype %>
+</p>
+
+<p>
+  <strong>Requests:</strong>
+  <%= @purchase.requests %>
+</p>
+
+<%= link_to 'Edit', edit_purchase_path(@purchase) %> |
+<%= link_to 'Back', purchases_path %>

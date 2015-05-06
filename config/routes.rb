@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :purchases
   get 'pages/itinerary'
 
   get 'pages/documents'
