@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   get 'pages/jfk'
 
+  get 'pages/store'
+
   devise_for :users
   get 'welcome/index'
 

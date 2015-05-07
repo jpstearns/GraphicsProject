@@ -16,4 +16,7 @@ class PagesController < ApplicationController
 
   def jfk
   end
+  
+  def store
+  end
 end
