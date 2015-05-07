@@ -29,7 +29,7 @@
 						<nav id="nav">
 							<ul>
 								<li><%= link_to "HOME", root_path%></li>
-								<li>
+								<li class= "current">
 									<a href="">Travel Reservations</a>
 									<ul>
 										<li><%= link_to "Purchase Ticket", new_purchase_path%></li>
@@ -38,9 +38,9 @@
 										<li>
 											<a href="">Your Trip</a>
 											<ul>
-												<li><%= link_to "Edit User Info", root_path%></li>
+												<li><%= link_to "Edit User Info", edit_user_registration_path%></li>
 												<li><%= link_to "Travel Ticket", purchases_path%></li>
-												<li><<%= link_to "Travel Documents", pages_documents_path%></li>
+												<li><%= link_to "Travel Documents", pages_documents_path%></li>
 												<li><%= link_to "Disclaimer", pages_disclaimer_path%></li>
 											</ul>
 										</li>
