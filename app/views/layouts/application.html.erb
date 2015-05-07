@@ -28,28 +28,27 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
+								<li><%= link_to "HOME", root_path%></li>
 								<li>
-									<a href="">Book Reservation</a>
+									<a href="">Travel Reservations</a>
 									<ul>
-										<li><a href="#">Purchase Ticket</a></li>
-										<li><a href="#">Roll Call</a></li>
-										<li><a href="#">Itenerary</a></li>
+										<li><%= link_to "Purchase Ticket", new_purchase_path%></li>
+										<li><%= link_to "Rool Call", purchases_path%></li>
+										<li><%= link_to "Itinerary", pages_itinerary_path%></li>
 										<li>
 											<a href="">Your Trip</a>
 											<ul>
-												<li><a href="#">Update User Information</a></li>
-												<li><a href="#">Travel Ticket</a></li>
-												<li><a href="#">Travel Documents</a></li>
-												<li><a href="#">Special Requests</a></li>
-												<li><a href="#">Disclaimer</a></li>
+												<li><%= link_to "Edit User Info", root_path%></li>
+												<li><%= link_to "Travel Ticket", purchases_path%></li>
+												<li><<%= link_to "Travel Documents", pages_documents_path%></li>
+												<li><%= link_to "Disclaimer", pages_disclaimer_path%></li>
 											</ul>
 										</li>
-										<li><a href="#">JFK Assasination History</a></li>
+										<li><%= link_to "JFK Assassination History", pages_jfk_path%></li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Online Store</a></li>
-								<li><a href="right-sidebar.html">About Us</a></li>
+								<li><%= link_to "ONLINE STORE", pages_store_path%></li>
+								<li><%= link_to "ABOUT", pages_about_path%></li>
 								<li><a href="#footer">Contact</a></li>
 							</ul>
 						</nav>
