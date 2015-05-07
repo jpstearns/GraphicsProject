@@ -1,4 +1,4 @@
-<%= form_for(@purchase) do |f| %>
+  <%= form_for(@purchase) do |f| %>
   <% if @purchase.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@purchase.errors.count, "error") %> prohibited this purchase from being saved:</h2>
@@ -10,24 +10,25 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :fname %><br>
-    <%= f.text_field :fname %>
-  </div>
-  <div class="field">
-    <%= f.label :lname %><br>
-    <%= f.text_field :lname %>
-  </div>
-  <div class="field">
-    <%= f.label :dob %><br>
-    <%= f.date_select :dob %>
-  </div>
-  <div class="field">
-    <%= f.label :ssn %><br>
-    <%= f.text_field :ssn %>
-  </div>
-  <div class="field">
+    <!-- Main -->
+      <div class="wrapper style2">
+        <div class="title">|PURCHASE TICKET|</div>
+        <div id="main" class="container">
+          <div class="row 150%">
+            <div class="4u">
+              
+              <!-- Sidebar -->
+                <div id="sidebar">
+                  <section class="box">
+                    <header>
+                      <h2>Time Travel Checklist</h2>
+                    </header>
+                    <p>After Purchasing your ticket don't forget to review our Time Travel Checklist for important information about your journey. Check out our online store for official BM travel wear.</p>
+                    <a href="#" class="button style1">Learn More</a>
+                  </section>
+                   <div class="field">
+                    <br>
+                    <h2>Billing Information</h2>
     <%= f.label :address %><br>
     <%= f.text_field :address %>
   </div>
@@ -55,11 +56,88 @@
     <%= f.label :cardtype %><br>
     <%= f.text_field :cardtype %>
   </div>
+                        </article>
+                      </li>
+                      <li>
+                        <article class="box post-excerpt">
+                          <a href="#" class="image left"><img src="/assets/pic10.jpg" alt="" /></a>
+                          <h3><a href="#">Looking For More Info</a></h3>
+                          <p>Head on over to our About page to learn more about Black Magic and our time Travel Technologies.</p>
+                        </article>
+                      </li>
+                    </ul>
+                    <a href="#" class="button style1">Archives</a>
+                  </section>
+                </div>
+              
+            </div>
+            <div class="8u important(collapse)">
+            
+              <!-- Content -->
+                <div id="content">
+                  <article class="box post">
+                    <header class="style1">
+                      <h2>Thanks for Joining us this month on our trip  to witness the Assasination of JFK.</h2>
+                      <p>Tempus feugiat veroeros sed nullam dolore</p>
+                    </header>
+                    <a href="#" class="image featured">
+                      <img src="/assets/aboutpic.jpg" alt="" />
+                    </a>
+                        <div class="field">
+  <div class="field">
+    <%= f.label :fname %><br>
+    <%= f.text_field :fname %>
+  </div>
+  <div class="field">
+    <%= f.label :lname %><br>
+    <%= f.text_field :lname %>
+  </div>
+  <div class="field">
+    <%= f.label :dob %><br>
+    <%= f.text_field :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :ssn %><br>
+    <%= f.text_field :ssn %>
+  </div>
+
   <div class="field">
     <%= f.label :requests %><br>
     <%= f.text_area :requests %>
   </div>
+  <br><br>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Purchase Ticket" %>
   </div>
 <% end %>
+                  </article>
+                  <div class="row 150%">
+                    <div class="6u">
+                      <section class="box">
+                        <header>
+                          <h2>Lee Harvey Oswald</h2>
+                        </header>
+                        <a href="#" class="image featured"><img src="/assets/pic05.jpg" alt="" /></a>
+                        <p>Though the CIA's formal investigation turned up no other suspects in the assination of our President, many believe that Lee Harvey Oswald was a patsy. See for yourself first hand!</p>
+                        <a href="#" class="button style1">More</a>
+                      </section>
+                    </div>
+                    <div class="6u">
+                      <section class="box">
+                        <header>
+                          <h2>The Grassy Knoll</h2>
+                        </header>
+                        <a href="#" class="image featured"><img src="/assets/pic06.jpg" alt="" /></a>
+                        <p>You will have front row seats as the President's open top convertible goes meandering by the infamous "Grassy Knoll" where many witnesses purpoted to hear gun shots from!</p>
+                        <a href="#" class="button style1">More</a>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+
