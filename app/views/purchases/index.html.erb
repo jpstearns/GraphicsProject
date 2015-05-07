@@ -1,49 +1,90 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Purchases</h1>
+    <!-- Main -->
+      <div class="wrapper style2">
+        <div class="title">|ALL PASSANGERS|</div>
+        <div id="main" class="container">
+          <div class="row 150%">
+            <div class="4u">
+              
+              <!-- Sidebar -->
+                <div id="sidebar">
+                  <section class="box">
+                     <section>
+                    <%= form_tag("/applicants", method: "get") do %>
+                      <%= label_tag(:search, "Search Passengers:") %>
+                      <%= text_field_tag(:search) %>
+                      <br>
+                      <%= submit_tag("Search") %>
+                    <% end %>
+                    <br>
+                  </section>
+                  </section>
+                  <section class="box">
+                    <header>
+                      <h2>Black Magic Passengers</h2>
+                    </header>
+                    <ul class="style2">
+                      <li>
+                          <h3><a href="#">Together Everyone Achieves More</a></h3>
+                          <p>Every trip through a worm hole into the past is a mission in and of its self. We encourage our passengers to get acquainted with one another and learn to work together as a team.</p>
+                        </article>
 
-<table>
-  <thead>
-    <tr>
-      <th>Fname</th>
-      <th>Lname</th>
-      <th>Dob</th>
-      <th>Ssn</th>
-      <th>Address</th>
-      <th>Line2</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Zip</th>
-      <th>Creditcard</th>
-      <th>Cardtype</th>
-      <th>Requests</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+                </div>
+              
+            </div>
+            <div class="8u important(collapse)">
+            
+              <!-- Content -->
+                <div id="content">
+                  <article class="box post">
+                    <header class="style1">
+                      <h2>Roll Call</h2>
+                      <p>Get to know your fellow adventurers.</p>
+                    </header>
 
-  <tbody>
-    <% @purchases.each do |purchase| %>
-      <tr>
-        <td><%= purchase.fname %></td>
-        <td><%= purchase.lname %></td>
-        <td><%= purchase.dob %></td>
-        <td><%= purchase.ssn %></td>
-        <td><%= purchase.address %></td>
-        <td><%= purchase.line2 %></td>
-        <td><%= purchase.city %></td>
-        <td><%= purchase.state %></td>
-        <td><%= purchase.zip %></td>
-        <td><%= purchase.creditcard %></td>
-        <td><%= purchase.cardtype %></td>
-        <td><%= purchase.requests %></td>
-        <td><%= link_to 'Show', purchase %></td>
-        <td><%= link_to 'Edit', edit_purchase_path(purchase) %></td>
-        <td><%= link_to 'Destroy', purchase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+                          <h1>Listing Passengers</h1>
 
-<br>
+                          <table class="default">
+                            <thead>
+                              <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Date Of Birth</th>
+                                <th>Ticket ID</th>
+                                <th colspan="3"></th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <% @purchases.each do |purchase| %>
+                                <tr>
+                                  <td><%= purchase.fname %></td>
+                                  <td><%= purchase.lname %></td>
+                                  <td><%= purchase.dob %></td>
+                                  <td><%= purchase.id %></td>
+                                  <td><%= link_to 'Show', purchase %></td>
+                                  <td><%= link_to 'Edit', edit_purchase_path(purchase) %></td>
+                                  <td><%= link_to 'Destroy', purchase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                                </tr>
+                              <% end %>
+                            </tbody>
+                          </table>
+
+                          <br>
 
 <%= link_to 'New Purchase', new_purchase_path %>
+
+                  </article>
+                  <div class="row 150%">
+                    <div class="6u">
+                      <section class="box">
+                      </section>
+                    </div>
+                  </div>
+                </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>

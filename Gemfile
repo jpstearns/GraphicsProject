@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise' 
 #font awesome icons
 gem "font-awesome-rails"
+
 group :development, :test do
   gem 'sqlite3'
 end

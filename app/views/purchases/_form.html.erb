@@ -29,38 +29,38 @@
                    <div class="field">
                     <br>
                     <h2>Billing Information</h2>
-    <%= f.label :address %><br>
+    <%= f.label :address, "Address" %><br>
     <%= f.text_field :address %>
   </div>
   <div class="field">
-    <%= f.label :line2 %><br>
+    <%= f.label :line2, "Address Line 2:" %><br>
     <%= f.text_field :line2 %>
   </div>
   <div class="field">
-    <%= f.label :city %><br>
+    <%= f.label :city, "City" %><br>
     <%= f.text_field :city %>
   </div>
   <div class="field">
-    <%= f.label :state %><br>
+    <%= f.label :state, "State" %><br>
     <%= f.text_field :state %>
   </div>
   <div class="field">
-    <%= f.label :zip %><br>
+    <%= f.label :zip, "Zip Code" %><br>
     <%= f.text_field :zip %>
   </div>
   <div class="field">
-    <%= f.label :creditcard %><br>
+    <%= f.label :creditcard, "Credit Card NUmber" %><br>
     <%= f.text_field :creditcard %>
   </div>
   <div class="field">
-    <%= f.label :cardtype %><br>
-    <%= f.text_field :cardtype %>
+    <%= f.label :cardtype, "Card Type" %><br>
+    <%= f.select :cardtype, [['Visa','Visa'],['Mastercard','Mastercard'],['American Express','American Express'],['Discover'],['Discover'],['PayPal','Paypal']] %>
   </div>
                         </article>
                       </li>
                       <li>
                         <article class="box post-excerpt">
-                          <a href="#" class="image left"><img src="/assets/pic10.jpg" alt="" /></a>
+                          <a href="#" class="image left"><img src="/assets/logo.jpg" alt="" /></a>
                           <h3><a href="#">Looking For More Info</a></h3>
                           <p>Head on over to our About page to learn more about Black Magic and our time Travel Technologies.</p>
                         </article>
@@ -85,24 +85,25 @@
                     </a>
                         <div class="field">
   <div class="field">
-    <%= f.label :fname %><br>
+    <%= f.label :fname, "First Name:" %><br>
     <%= f.text_field :fname %>
   </div>
   <div class="field">
-    <%= f.label :lname %><br>
+    <%= f.label :lname, "Last Name:" %><br>
     <%= f.text_field :lname %>
   </div>
   <div class="field">
-    <%= f.label :dob %><br>
-    <%= f.text_field :dob %>
+    <%= f.label :dob, "Date Of Birth:" %><br>
+    <input type = "date">
+
   </div>
   <div class="field">
-    <%= f.label :ssn %><br>
+    <%= f.label :ssn, "Social Security Number:" %><br>
     <%= f.text_field :ssn %>
   </div>
 
   <div class="field">
-    <%= f.label :requests %><br>
+    <%= f.label :requests, "Special Requests:" %><br>
     <%= f.text_area :requests %>
   </div>
   <br><br>

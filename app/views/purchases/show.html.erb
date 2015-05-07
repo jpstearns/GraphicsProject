@@ -1,64 +1,78 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Fname:</strong>
-  <%= @purchase.fname %>
-</p>
-
-<p>
-  <strong>Lname:</strong>
-  <%= @purchase.lname %>
-</p>
-
-<p>
-  <strong>Dob:</strong>
-  <%= @purchase.dob %>
-</p>
-
-<p>
-  <strong>Ssn:</strong>
-  <%= @purchase.ssn %>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @purchase.address %>
-</p>
-
-<p>
-  <strong>Line2:</strong>
-  <%= @purchase.line2 %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @purchase.city %>
-</p>
-
-<p>
-  <strong>State:</strong>
-  <%= @purchase.state %>
-</p>
-
-<p>
-  <strong>Zip:</strong>
-  <%= @purchase.zip %>
-</p>
-
-<p>
-  <strong>Creditcard:</strong>
-  <%= @purchase.creditcard %>
-</p>
-
-<p>
-  <strong>Cardtype:</strong>
-  <%= @purchase.cardtype %>
-</p>
-
+    <!-- Intro -->
+      <div id="intro-wrapper" class="wrapper style1">
+        <div class="title">|Passanger Ticket</div>
+       
+<table class="defualt">
+  <tr>
+    <td>
+      <img src="/assets/logo.jpg" width="100" height="100" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td> 
+        <strong>First Name: </strong>
+        <%= @purchase.fname %>
+    </td>
+    <td>
+        <strong>Last Name:</strong>
+             <%= @purchase.lname %>
+    </td>
+    <td>
+      <strong>Dob:</strong>
+      <%= @purchase.dob %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Destination: </strong>
+      Dallas Texas, 1963
+    </td>
+    <td>
+        <strong>Event:</strong>
+        The Assasination of JFK
+    </td> 
+    <td>
+      <strong>Departure: </strong>
+      May 7th, 2015. CCRI Warwick, Rhode Island
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <strong>Gate Number: 4078</strong>
+    </td>
+        <td>
+        <strong>Seat Number: </strong>
+        420-A
+    </td>
+        <td>
+        <strong>Return: </strong>
+      May 7th, 2015. CCRI Warick, Rhoe Island
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Purchase Number</strong>
+      <%=@purchase.id %>
+    </td>
+    <td>
+          <td>
+      <img src="/assets/barcode.jpg" width="200" height="100" alt="" />
+    </td>
+</tr>
+</table>
 <p>
   <strong>Requests:</strong>
   <%= @purchase.requests %>
 </p>
+          <ul class="actions">
+            <li><a href="#" class="button style3 big">Thank You Flying Black Magic</a></li>
+          </ul>
+
+        </section>
+      </div>
+    
 
 <%= link_to 'Edit', edit_purchase_path(@purchase) %> |
 <%= link_to 'Back', purchases_path %>
