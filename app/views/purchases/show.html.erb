@@ -19,10 +19,7 @@
         <strong>Last Name:</strong>
              <%= @purchase.lname %>
     </td>
-    <td>
-      <strong>Dob:</strong>
-      <%= @purchase.dob %>
-    </td>
+
   </tr>
   <tr>
     <td>
@@ -53,11 +50,11 @@
   </tr>
   <tr>
     <td>
-      <strong>Purchase Number</strong>
-      <%=@purchase.id %>
     </td>
     <td>
           <td>
+            <strong>Ticket#:</strong>
+          <%=@purchase.id %>
       <img src="/assets/barcode.jpg" width="200" height="100" alt="" />
     </td>
 </tr>
@@ -67,9 +64,8 @@
   <%= @purchase.requests %>
 </p>
           <ul class="actions">
-            <li><a href="#" class="button style3 big">Thank You Flying Black Magic</a></li>
+            <li><a href="#" class="button style3 big">Thank You For Flying Black Magic</a></li>
           </ul>
-
         </section>
       </div>
     
